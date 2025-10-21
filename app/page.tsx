@@ -4,6 +4,7 @@ import { useState } from "react";
 import Image from "next/image";
 import LanguageSwitcher from "./components/LanguageSwitcher";
 import { Language, translations } from "./translations";
+import { Analytics } from "@vercel/analytics/next";
 
 export default function Home() {
   const [language, setLanguage] = useState<Language>("zh");
@@ -11,6 +12,7 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-stone-50 via-stone-100 to-neutral-100">
+      <Analytics />
       {/* Language Switcher */}
       <LanguageSwitcher
         currentLanguage={language}
@@ -69,7 +71,7 @@ export default function Home() {
                   </a>
 
                   <a
-                    href="https://sg.unincore.cn"
+                    href="https://unincore.sg"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="group flex items-center gap-3 p-4 rounded-lg hover:bg-gray-50 transition-colors"
@@ -81,7 +83,7 @@ export default function Home() {
                   </a>
 
                   <a
-                    href="https://hk.unincore.cn"
+                    href="https://unincore.hk"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="group flex items-center gap-3 p-4 rounded-lg hover:bg-gray-50 transition-colors"
