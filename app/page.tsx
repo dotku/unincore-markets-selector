@@ -144,7 +144,7 @@ export default function Home() {
           </div>
 
           {/* Features Section */}
-          <div className="max-w-3xl mx-auto bg-white/50 backdrop-blur-sm rounded-2xl sm:rounded-3xl p-6 sm:p-10 border border-white/60 mx-2 sm:mx-auto">
+          <div className="max-w-3xl bg-white/50 backdrop-blur-sm rounded-2xl sm:rounded-3xl p-6 sm:p-10 border border-white/60 mx-2 sm:mx-auto">
             <h3 className="text-center text-gray-700 font-serif text-xl sm:text-2xl mb-6 sm:mb-8">
               {t.features.title}
             </h3>
